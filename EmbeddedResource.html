@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<img src="img/viewOfBack.jpg" alt="背影" />
+		<iframe src="http://3g.163.com/touch/"></iframe>
+		<div style="display: none;">
+			<object type="application/x-shockwave-flash">
+				<param name="movie" value="http://pdfReader.swf" />
+				<param name="flashvars" value="http://book.pdf" />
+			</object>
+			<object data="http://pdfReader.swf" type="application/x-shockwave-flash">
+				<param name="flashvars" value="http://book.pdf" /><!-—IE8以上-->
+			</object>
+			<embed type="application/x-shockwave-flash" src="http://pdfReader.swf" height="480" width="640"></embed>
+		</div>
+		<video autoplay="autoplay" loop="loop" controls="controls" poster="img/face.jpg">
+			<source src="video/zero.mp4" type="video/mp4"></source>
+			<track kind="subtitles" src="video.vtt" srclang="cn" label="cn"  />
+			您的浏览器不支持
+		</video>
+		<video controls="controls" poster="img/face.jpg">
+			<source src="video/video.mp4" type="video/mp4"></source>
+			<track kind="subtitles" src="video(1).vtt" srclang="cn" label="cn"  />
+		</video>
+		<audio controls="controls">
+			<source src="audio/wind.ogg"></source>
+		</audio>
+		<img src="img/viewOfBack.jpg" alt="viewBack" usemap="#headof" />
+		<map name="headof" data-ganame ="left" data-ganame ="right">
+			<area coords="0,0,400,400" href="a.html" alt="a" />
+			<area coords="400,0,800,400" href="index.html" alt="a" />
+		</map>
+		<table>
+			<caption>英雄传说</caption>
+			<thead>
+				<tr>
+					<th>版本</th>
+					<th>男主角</th>
+					<th>女主角</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th rowspan="2">空之轨迹fc</th>
+					<td>约修亚</td>
+					<td>艾丝蒂尔</td>
+				</tr>
+				<tr>
+					<td>约修亚</td>
+					<td>艾丝蒂尔</td>
+				</tr>
+				<tr>
+					<th>空之轨迹3rd</th>
+					<td>凯文</td>
+					<td>莉丝</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="3">空之轨迹三部曲</td>
+				</tr>
+			</tfoot>
+		</table>
+		<form action="/login" method="post">
+			<fieldset id="">
+			<legend>a</legend>
+			<input type="file" name="file" id="file" value="5" />
+			<input checked="checked" type="checkbox" name="size" id="size1" value="5" />
+			<label for="size1">5寸</label>
+			<input type="checkbox" name="size" id="size2" value="6" />
+			<label for="size2">6寸</label>
+			<input disabled="disabled" type="checkbox" name="size" id="size3" value="7" />
+			<label for="size3">7寸</label>
+			<input type="radio" name="material" id="material1" value="fushi" />
+			<label for="material1">富士</label>
+			<input type="radio" name="material" id="material2" value="keda" />
+			<label for="material2">柯达</label>
+			<input type="text" name="description" placeholder="请输入"/>
+			<input type="text" name="description" value="请输入"/>
+			<input type="text"  readonly="readonly" name="description" value="请输入"/>
+			<input type="text"  hidden="hidden" name="description" value="请输入"/>
+			<input type="submit" />
+			<input type="reset"/>
+			</fieldset>
+			<fieldset id="">
+			<legend>b</legend>
+			<label for="delivery">送货方式：</label>
+			<select id="delivery" name="delivery">
+				<optgroup label="快速">
+					<option value="0">快递</option>
+					<option value="1">EMS</option>	
+				</optgroup>
+				<option value="2" selected="selected">平邮</option>
+			</select>
+			<textarea name="feedback" rows="4" cols="4"></textarea>
+			</fieldset>
+			<fieldset id="">
+			<legend>html5</legend>
+			<input type="email" name="email" id="email"/>
+			<input type="url" name="url" id="url" value="" />
+			<input type="number" name="" id="" value="" />
+			<input type="tel" name="" id="" value="" />
+			<input type="search" name="" id="" value="" />
+			<input type="range" name="" id="" value="" />
+			<input type="color" name="" id="" value="" />
+			<input type="date" name="" id="" value="" />
+			<input type="month" />
+			</fieldset>
+			<button type="submit">提交</button>
+			<button type="reset">重置</button>
+		</form>
+
+
+</html>
